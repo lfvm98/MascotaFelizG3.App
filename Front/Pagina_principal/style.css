@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    color: rgb(255, 255, 255);
+    font-family: "calibri";
+}
+
+
+body{
+    background-image: url("pexels-mingzhe-zhang-13388446.jpg");
+    background-size: cover;
+}
+
+.form-register{
+    
+    
+    width: 500px;
+    background:#1b263163 ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "comic sans ms";
+    color: white;
+    box-shadow: 9px 13px 37px #000;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+ }
+
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+  font-family: "comic sans ms", sans-serif;  
+}
+header{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #1b2631;
+}
+/*estilo de la lista de enlace*/
+nav ul {
+    list-style: none;
+    background-color:  #2E4053;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    transition: all ease-in-out 250ms;
+
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background: #1B2631 ;
+
+}
