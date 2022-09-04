@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('/Front/images/pexels-blue-bird-7210491.jpg');
+}
+
+header{
+    width:100%;
+    overflow: auto;
+    background: #e8ced200;
+    margin-top: 0px;
+}
+
+header nav{
+    float: unset;
+    line-height: 50px;
+    text-align:center;
+
+}
+
+
+header nav a{
+
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 5px;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    -transition:all 500ms ease ;
+}
+
+header nav a:hover{
+    background: #2c20b3;
+    border-radius: 50px;
+}
+
+.RegistroPropietario{
+    width: 400px;
+    background: #e8ded151;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+h4 {
+   font-size: 40px;
+   margin-bottom: 20px;
+   color: #1f53c5;
+   
+}
+
+.controls{
+    width: 100%;
+    background: #f5f6f7;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.RegistroPropietario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.RegistroPropietario a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.RegistroPropietario a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.RegistroPropietario .botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
