@@ -11,8 +11,8 @@ namespace MascotaFeliz.App.Consola
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
         private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
-        private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
-        private static IRepositorioVisitaPyP _repoVisitaPyP = new RepositorioVisitaPyP(new Persistencia.AppContext());
+        //private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
+        //private static IRepositorioVisitaPyP _repoVisitaPyP = new RepositorioVisitaPyP(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hola amigos vamos a empezar a trabajar con las tablas");
@@ -20,6 +20,9 @@ namespace MascotaFeliz.App.Consola
             //ListarDuenosFiltro();      
             //AddDueno();
             //BuscarDueno(5);
+            //BuscarMascota(2);
+            //AddMascota();
+            //ListarMascotas();
 
             //ListarVeterinariosFiltro();
             //AddVeterinario();
@@ -54,7 +57,7 @@ namespace MascotaFeliz.App.Consola
             };
             _repoVeterinario.AddVeterinario(veterinario);
         }
-
+         /*
         private static void AddHistoria()
         {
             var historia = new Historia
@@ -64,6 +67,7 @@ namespace MascotaFeliz.App.Consola
             };
             _repoHistoria.AddHistoria(historia);
         }
+        */
 
 
         private static void BuscarDueno(int idDueno)
@@ -95,10 +99,40 @@ namespace MascotaFeliz.App.Consola
             {
                 Console.WriteLine(p.Nombres + " " + p.Apellidos);
             }
-
+             
+        }
+ 
+            private static void AddMascota()
+        {
+            var mascota = new Mascota
+            {
+                Nombre = "Zeus",
+                Color = "Rosa", 
+                Especie = "Draquing",
+                Raza = "rasa rara"
+            };
+            _repoMascota.AddMascota(mascota);
         }
 
 
+
+
+            //buscar una mascota
+        private static void BuscarMascota(int idMascota)
+        {
+            var mascota = _repoMascota.GetMascota(idMascota);
+            Console.WriteLine(mascota.Nombre + " " + mascota.Especie+" "+mascota.Color+" "+mascota.Raza+" ");
+        }
+        //Retorna Lista De Mascotas
+            private static void ListarMascotas()
+        {
+            var mascotas = _repoMascota.GetAllMascotas();
+            foreach (Mascota m in mascotas)
+            {
+                Console.WriteLine(m.Nombre +" "+ m.Especie+" "+ m.Color+" "+ m.Raza);
+            }
+
+        }
         
         
     }
